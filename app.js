@@ -1,10 +1,10 @@
-const express = require("express")
-const app = express()
-const port = 8000
-const rotaLivro = require("./rotas/livro.js")
+const express = require("express");
+const app = express();
+const port = 8000;
+const rotaLivro = require("./rotas/livro.js");
 
-app.use("/livros", rotaLivro)
+app.use("/livros", rotaLivro);
 
 app.listen(port, () => {
-    console.log(`Escutando a porta ${port}`)
-})
+    console.log(`Escutando a porta ${port}`);
+});
